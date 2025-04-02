@@ -39,19 +39,15 @@ class Gallery {
   getRandomCivil() {
     let num = Math.floor(Math.random() * 4);
     return this.civilImages[num]
-    //document.body.imageUrl = this.civilImages[num];
   }
 
   getRandomMilitary() {
     let num = Math.floor(Math.random() * 4);
    return this.militaryImages[num]
-   // document.body.imageUrl = this.militaryImages[num];
   }
 
   getAll() {
-    let num = Math.floor(Math.random() * 4);
-    return this.militaryImages[num], this.civilImages[num]
-  //  (document.body.imageUrl = this.militaryImages[num]), this.civilImages[num];
+    return [...civilAircrafts, ...civilHelicopters,...militaryAircrafts,...militaryHelicopter]
   }
 }
 
